@@ -1,3 +1,11 @@
+# System configuration requirements:
+# 1) Enable Shell for jenkins User
+# /etc/passwd
+# 2) Change group permission for Jenkins like sudo user
+# /etc/sudoers
+# jenkins ALL=NOPASSWD:ALL
+# 3) Jenkins job Branch Specifier must be set to "*/main"
+
 sudo apt install -y apache2
 sudo systemctl restart apache2
 sudo rm -rf /var/www/*
