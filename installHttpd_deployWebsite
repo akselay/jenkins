@@ -1,0 +1,5 @@
+sudo apt install -y httpd
+sudo systemctl restart httpd
+sudo rm -rf /var/www/*
+sudo rm -rf /var/www/html/.git
+sudo git clone https://github.com/akselay/testweb.git /var/www/html/
